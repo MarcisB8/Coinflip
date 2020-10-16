@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Coinflip</title>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./web3.min.js"></script>
+      <script type="text/javascript" src="./abi.js"></script>
+      <script type="text/javascript" src="./main.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="notebook.css"> <!-- Design -->
+
+  </head>
+
+    <body>
+      <div id="content-wrap"> <!-- To keep footer at the bottom -->
+
+        <button onclick="darkMode()" class="addButton">DAY/NIGHT</button>
+        <!-- Defines that the button will call darkMode() function. Class only for design -->
+
+        <h1>Let's play!</h1>
+
+        <h3>
+          1. Connect Your MetaMask;<br>
+          2. Enter the amount to bet;<br>
+          3. Press BET!<br>
+          4. Confirm the transaction;<br>
+          5. Enjoy the game!<br>
+        </h3>
+
+        <input type="text" class="textarea" id="amount" placeholder="Amount to bet (ETH)" >
+        <button id="bet" class="addButton">BET!</button>
+        <br><br>
+        <table id="entries">
+          <tbody>
+            <tr>
+              <td width=65px></td><td width=745px></td> <!-- Aligns content -->
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h3> ADMIN AREA </h3>
+
+        <button id="viewBalance" class="addButton">VIEW BALANCE</button>
+        <h3 id="balance"></h3>
+
+        <input type="text" class="textarea" id="deposit" placeholder="Amount to deposit (ETH)" >
+        <button id="depositButton" class="addButton">DEPOSIT</button>
+
+        <input type="text" class="textarea" id="withdraw" placeholder="Amount to withdraw (ETH)" >
+        <button id="withdrawButton" class="addButton">WITHDRAW</button>
+
+      </div>
+
+      <footer>
+        Feel free to use and re-use this webpage and its elements.
+      </footer>
+
+    </body>
+
+  </html>

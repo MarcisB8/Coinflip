@@ -1,0 +1,23 @@
+{
+  "name": "coinflip",
+  "version": "1.0.0",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "truffle-assertions": "^0.9.2",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  },
+  "description": ""
+}

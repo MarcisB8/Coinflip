@@ -1,0 +1,151 @@
+
+body {
+ background-image: url("background.png");
+ background-attachment: fixed;
+ background-position: center;
+ max-width: 960px;
+ margin: auto;
+ position: relative;
+ min-height: 100vh;
+ padding-bottom: 15px;    /* Footer height to prevent overlap */
+}
+#content-wrap {
+  padding-bottom: 15px;    /* Footer height */
+}
+.darkMode {
+  background-image: url("darkModeBackground.png");
+}
+  /* Element colors and transparency are chosen so that
+  only background needs to be changed for dark mode.
+  This saves the effort of writing another design for each element. */
+
+h1 {
+  font-family: Verdana;
+  font-size: 98px;
+  margin-bottom: 22px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(30, 157, 210, 0.7);
+  overflow: visible;
+}
+h2 {
+  font-family: Verdana;
+  font-size: 38px;
+  margin-bottom: 22px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(30, 157, 210, 0.7);
+  overflow: visible;
+}
+h3 {
+  font-family: Verdana;
+  font-size: 28px;
+  margin-bottom: 22px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(30, 157, 210, 0.7);
+  overflow: visible;
+}
+
+.textarea {
+  background-color: rgba(255, 252, 240, 0.4);
+  border:none;
+  outline: none;
+  resize: none;
+  width: 100vh;
+  padding: 10px 10px;
+  font-family: Verdana;
+  font-size: 14px;
+}
+::placeholder {
+  color: rgba(30, 157, 210, 0.9);
+}
+table {
+  background-color:rgba(255, 252, 240, 0.4);
+  width: 102vh;
+}
+th {
+  width: 760px;
+  font-family: Arial;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: bottom;
+  padding: 5px 8px;
+}
+td {
+  font-family: Arial;
+  text-align: justify;
+  vertical-align: top;
+  padding: 7px;
+}
+.addButton {
+  background-color: rgba(30, 157, 210, 0.6);
+  border: none;
+  color: rgba(255, 252, 240, 0.8);
+  width: 102vh;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 28px;
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+.addButton:hover {
+  background-color: rgba(255, 252, 240, 0.4);
+  border: 2px solid rgba(30, 157, 210, 0.7);
+  color: rgba(30, 157, 210, 0.7);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 28px;
+  font-weight: 600;
+}
+.addButton:focus {
+    outline: none;
+}
+.remove {
+  background-color: rgba(210, 160, 0, 0.7);
+  border: none;
+  color: rgba(255, 252, 240, 0.8);
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+.remove:hover {
+  background-color: rgba(255, 252, 240, 0);
+  border: 2px solid rgba(210, 160, 0, 0.7);
+  color: rgba(210, 160, 0, 0.7);
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+.remove:focus {
+    outline: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 101vh;
+  height: 15px;
+  font-family: Verdana;
+  font-size: 10px;
+  padding: 5px;
+  background-color: rgba(255, 252, 240, 0.4);
+  text-align: center;
+}
